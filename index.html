@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resistor Colour Coding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Resistor Colour Code Calculator</h1>
+    
+    <div id="main">
+    <div id="container">
+        <div id="values">
+            <p>1st Band</p>
+            <select id="band1">
+                <option value="0">Black</option>
+                <option value="1">Brown</option>
+                <option value="2">Red</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="5">Green</option>
+                <option value="6">Blue</option>
+                <option value="7">Violet</option>
+                <option value="8">Grey</option>
+                <option value="9">white</option>
+            </select>
+            <p>2nd Band</p>
+            <select id="band2">
+                <option value="0" >Black</option>
+                <option value="1">Brown</option>
+                <option value="2">Red</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="5">Green</option>
+                <option value="6">Blue</option>
+                <option value="7">Violet</option>
+                <option value="8">Grey</option>
+                <option value="9">white</option>
+            </select>
+            <p>Multiplier</p>
+            <select id="multiplier">
+                <option value="0" >Black</option>
+                <option value="1">Brown</option>
+                <option value="2">Red</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="5">Green</option>
+                <option value="6">Blue</option>
+                <option value="7">Violet</option>
+                <option value="8">Grey</option>
+                <option value="9">white</option>
+            </select>
+            <p>Tolerance</p>
+            <select id="tolerance">
+                <option value="1">Brown</option>
+                <option value="2">Red</option>
+                <option value="3">Orange</option>
+                <option value="4">Yellow</option>
+                <option value="0.5">Green</option>
+                <option value="0.25">Blue</option>
+                <option value="0.1">Violet</option>
+                <option value="0.05">Grey</option>
+                <option value="5">Gold</option>
+                <option value="10">Silver</option>
+            </select>
+        </div>
+
+        <div id="resistor">
+            <br><br>
+            <img src="resistor-color-diagram-bg.png">
+            <div id="clr1"></div>
+            <div id="clr2"></div>
+            <div id="clr3"></div>
+            <div id="clr4"></div>
+            
+            <p id="output">Resistance : </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

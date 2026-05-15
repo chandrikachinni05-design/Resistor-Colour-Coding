@@ -1,0 +1,137 @@
+/* Colours Used : 
+    #6F1D1B - Dark Wine
+    #BB9457 - Camel
+    #432818 - Dark Coffee
+    #99582A - Chocolate Brown
+    #FFE6A7 - Light Apricot
+    #FFFFFF - White
+*/
+
+*{
+    text-align: center;
+    padding:5px;
+}
+
+h1{
+    color:#6F1D1B;
+    background-color:#FFE6A7;
+}
+
+#main{
+    display:flex;
+    justify-content:center;
+}
+
+#container{
+    text-align: center;
+    height:80vh;
+    width:80vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:5px;
+}
+
+#values{
+    height:75vh;
+    width:35vw;
+    padding: 2px;
+}
+
+
+p{
+    text-align:left;
+    padding:4px;
+    color:#432818;
+}
+
+#resistor{
+    height:75vh;
+    width:35vw;
+    padding:2px;
+    position:relative;
+    overflow: hidden;
+}
+
+#resistor img{
+    width:273px;
+    position:absolute;
+    top:40px;
+    left:85px;
+}
+
+#band1{
+    width:30vw;
+}
+
+#band2{
+    width:30vw;
+}
+
+#multiplier{
+    width:30vw;
+}
+
+#tolerance{
+    width:30vw;
+}
+
+#clr1, #clr2, #clr3, #clr4{
+    height:37px;
+    top:54px;
+    width:3px;
+    position:absolute;
+    background-color: black;
+}
+
+#clr1{
+    left:155px;
+}
+
+#clr2{
+    left:185px;
+}
+
+#clr3{
+    left:215px;
+}
+
+#clr4{
+    left:285px;
+}
+
+#output{
+    position:absolute;
+    left:100px;
+    top:180px;
+    font-size:23px;
+    color:#432818;
+    letter-spacing:1px;
+}
+
+
+@media(max-width:800px){
+
+    #container{
+        text-align: center;
+        height:auto;
+        width:80vw;
+        display:flex;
+        flex-wrap:wrap;
+        flex-direction:column;
+        align-items:center;
+        gap:25px;
+    }
+
+    #values{
+        width:95%;
+        height:370px;
+        border: 2px solid #FFE6A7;
+    }
+
+    #resistor{
+        width:95%;
+        height:400px;
+    }
+
+}
