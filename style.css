@@ -109,6 +109,19 @@ p{
     letter-spacing:1px;
 }
 
+button{
+    color:#432818;
+    background-color: #FFE6A7;
+    border:1px solid #BB9457;
+    width:60px;
+    position: absolute;
+    top:310px;
+    right:50px; 
+}
+
+button:active{
+    background-color:(255,230,167,0.2);
+}
 
 @media(max-width:800px){
 
