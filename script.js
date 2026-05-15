@@ -51,3 +51,22 @@ function calculate(){
         output.innerText = `Resistance : ${result}Ω  ±${tol}%`;
     }
 }
+
+button.addEventListener("click",() => {
+    band1.value="0";
+    band2.value="0";
+    multiplier.value="0";
+    tolerance.value="1";
+
+    clr1.style.backgroundColor = "black";
+    clr2.style.backgroundColor = "black";
+    clr3.style.backgroundColor = "black";
+    clr4.style.backgroundColor = "brown";
+
+    b1=0;
+    b2=0;
+    mul=0;
+    tol=0;
+
+    output.innerText="Resistance : ";
+});
