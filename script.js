@@ -10,6 +10,8 @@ let clr4 = document.querySelector("#clr4");
 
 let output = document.querySelector("#output");
 
+let button = document.querySelector("#button");
+
 let b1 = 0;
 let b2 = 0;
 let mul = 0;
@@ -34,7 +36,12 @@ multiplier.addEventListener("change",() => {
 });
 
 tolerance.addEventListener("change",() => {
-    clr4.style.backgroundColor = tolerance.options[tolerance.selectedIndex].text;
+    if(tolerance.options[tolerance.selectedIndex].text === "Colourless"){
+        clr4.style.backgroundColor = "transparent";
+    }else{
+        clr4.style.backgroundColor = tolerance.options[tolerance.selectedIndex].text;
+    }
+
     tol = Number(tolerance.value);
     calculate();
 });
@@ -66,7 +73,7 @@ button.addEventListener("click",() => {
     b1=0;
     b2=0;
     mul=0;
-    tol=0;
+    tol=1;
 
     output.innerText="Resistance : ";
 });
