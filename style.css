@@ -98,6 +98,7 @@ p{
 
 #clr4{
     left:285px;
+    background-color:brown;
 }
 
 #output{
@@ -122,6 +123,7 @@ button{
 button:active{
     background-color:(255,230,167,0.2);
 }
+
 
 @media(max-width:800px){
 
